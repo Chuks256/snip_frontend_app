@@ -25,13 +25,8 @@ function Maincomponent(){
             setBtnState("wait..");
 
                 //  define use effect hookk 
-                fetch("https://snip-eight.vercel.app/api/snip_url",{
-                    method:"POST",
-                    headers:{
-                        "content-type":"application/json"
-                    },
-                    body:JSON.stringify({originalUrl:url_input})
-                })
+                // "https://snip-eight.vercel.app/api/snip_url"
+                fetch(`https://snip-eight.vercel.app/api/snip_url?OriginalUrl=${url_input}`)
             .then(async (response)=>{
                 return response.json()
             })
