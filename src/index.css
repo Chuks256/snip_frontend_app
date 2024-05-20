@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "poppins";
+  src: url("./assets/Poppins-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "poppins";
+  padding:15px;
+  background-color: rgb(10, 10, 10);
+  color:ivory;
+}
+
+ul,a{
+  color:ivory;
+  text-decoration:none;
+  list-style-type: none;
+}

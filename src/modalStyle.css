@@ -1,0 +1,78 @@
+.modalContainer{
+ position:absolute; 
+ top:0;
+ left:0;
+ z-index:1;
+ background-color:  rgba(10, 10, 10, 0.199); 
+ width:100%;
+ height:100%;
+ backdrop-filter: blur(5px);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.modalBox{
+    padding:20px;
+    background-color: rgb(31, 31, 31);
+    min-width:25%;
+    min-height:60vh;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+}
+
+.modal_url_showcase,.modal_info{
+    margin-top: 20px;
+    padding:20px;
+    min-width:12%;
+    min-height:30px;
+    background-color:rgb(22, 22, 22) ;
+    border-radius:10px;
+}
+
+.modal_info{
+    min-height:200px;
+}
+
+.modal_url_showcase{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap:1em;
+    font-size:12px;
+}
+
+.modal_info_detail{
+    width:350px;
+}
+
+.copyIcon{
+    cursor: pointer;
+    transition: linear,500ms;
+}
+
+.copyIcon:active{
+    transform: scale(40%);
+}
+
+.modal_done_btn{
+        cursor: pointer;
+        border-style: solid;
+        border-color:transparent;
+            padding: 17px;
+            min-width:12%;
+            font-size:15px;
+            font-weight: bold;
+            border-radius:5px;
+            background-color: ivory;
+            transition: linear,500ms;
+        }
+        
+        .modal_done_btn:active{
+            transform: scale(30%);
+        }
+
+
+

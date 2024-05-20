@@ -1,0 +1,38 @@
+.headerContainer{
+    padding:30px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerTxt{
+    font-size:45px;
+    text-align:center;
+}
+
+.headerDetails{
+    font-size:20px;
+}
+
+@media screen and (max-width:900px){
+
+    .headerContainer{
+        padding:10px;
+    }
+
+    .headerTxt,.headerDetails{
+        font-size:30px;
+        text-align:center;
+        line-height: 45px;
+        width:300px;
+    }
+
+    .headerDetails{
+        width:240px;
+        font-size:16px;
+        line-height: 23px;
+        margin-top:-2px;
+    }
+}

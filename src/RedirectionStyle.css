@@ -1,0 +1,15 @@
+
+.redirectionContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:150px;
+    text-align:center;
+}
+
+.redirection_txt{
+    color:rgb(184, 184, 184);
+    width:400px;
+    line-height: 2em;
+    font-size:1.5em;
+}

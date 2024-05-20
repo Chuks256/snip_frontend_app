@@ -1,0 +1,17 @@
+.errorContainer{
+    position: absolute;
+    top:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    margin-left:550px;
+}
+
+.errorBox{
+    padding: 20px;
+    background-color: rgb(255, 57, 57);
+    border-radius:10px;
+    transition: linear,500ms;
+}
