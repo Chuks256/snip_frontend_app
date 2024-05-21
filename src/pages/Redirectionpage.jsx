@@ -13,7 +13,7 @@ function Redirectionpage(){
                 })
                 .then(async(data)=>{
                     if(data){
-                        window.location=data.link
+                        window.location=data.original_link
                     }
                 })
         }
