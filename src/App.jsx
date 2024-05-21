@@ -1,6 +1,6 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Landingpage from "./pages/Landingpage.jsx"
-import Documentationpage from './pages/documentationPage.jsx'
+import Documentationpage from './pages/DocumentationPage.jsx'
 import NotFoundPage from "./pages/NotFoundPage.jsx"
 import Redirectionpage from './pages/Redirectionpage.jsx'
 

@@ -27,7 +27,7 @@ function Maincomponent(){
                 // "https://snip-eight.vercel.app/api/snip_url"
                 // "http://localhost:4005/getAllData"
                 // https://snip-eight.vercel.app/api/snip_url?OriginalUrl=${url_input}
-                fetch(`http://localhost:4005/api/snip_url?originalUrl=${get_input_value}`)
+                fetch(`https://snip-eight.vercel.app/api/snip_url?originalUrl=${get_input_value}`)
             .then(async (response)=>{
                 return response.json()
             })
