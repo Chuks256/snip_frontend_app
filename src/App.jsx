@@ -9,8 +9,9 @@ function App() {
     <>
     <BrowserRouter>
     <Routes>
-      <Route index path="/home" element={<Landingpage/>} />
-      <Route path="/:referenceId" element={<Redirectionpage/>} />
+      <Route index path="/" element={<Landingpage/>} />
+      <Route path="/home" element={<Landingpage/>} />
+      <Route path="/i/:referenceId" element={<Redirectionpage/>} />
       <Route path='/documentation' element={<Documentationpage/>} />
       <Route path='/home/*' element={<NotFoundPage/>} />
     </Routes>

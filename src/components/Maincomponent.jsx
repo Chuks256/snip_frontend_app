@@ -23,10 +23,11 @@ function Maincomponent(){
         if(get_input_value.length>0){
             setColor("transparent")
             setBtnState("wait..");
-
                 //  define use effect hookk 
                 // "https://snip-eight.vercel.app/api/snip_url"
-                fetch(`https://snip-eight.vercel.app/api/snip_url?OriginalUrl=${url_input}`)
+                // "http://localhost:4005/getAllData"
+                // https://snip-eight.vercel.app/api/snip_url?OriginalUrl=${url_input}
+                fetch(`http://localhost:4005/api/snip_url?originalUrl=${get_input_value}`)
             .then(async (response)=>{
                 return response.json()
             })
@@ -66,7 +67,7 @@ function Maincomponent(){
         <div className="modalBox">
             <div className="modal_url_showcase">
                 <img src={copy} alt=""  className="copyIcon"/>
-                <div className="modal_url">{`${window.location.href}/${data.reference}`}</div>
+                <div className="modal_url">{`${window.location.href}i/${data.reference}`}</div>
             </div>
             <div className="modal_info">
                 <p className="modal_info_detail">
