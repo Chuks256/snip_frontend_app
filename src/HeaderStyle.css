@@ -19,7 +19,7 @@
 @media screen and (max-width:900px){
 
     .headerContainer{
-        padding:10px;
+        padding-top:20px;
     }
 
     .headerTxt,.headerDetails{

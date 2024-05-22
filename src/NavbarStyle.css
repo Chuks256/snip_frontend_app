@@ -41,6 +41,7 @@ font-weight:bold;
     transition: linear,100ms;
     cursor: pointer;
     transform:scale(90%);
+    color:rgb(10, 10, 10);
 }
 
 .navBarBtn:active{
@@ -54,6 +55,6 @@ font-weight:bold;
     }
 
     .navContainer{
-        gap:8em;
+        gap:9em;
     }
 }
