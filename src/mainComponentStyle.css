@@ -42,12 +42,14 @@ border-color:transparent;
         flex-direction: column;
     }
     .mainTxtInput{
-        padding:15px;
+        padding:16px;
+        width:300px;
     }
 
     .mainTxtBtn{
-        padding:10px;
+        padding:16px;
         width:330px;
+        font-size:16px;
     }
 
 

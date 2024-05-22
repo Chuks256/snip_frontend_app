@@ -19,3 +19,8 @@ ul,a{
   text-decoration:none;
   list-style-type: none;
 }
+
+*{
+  user-select: none;
+  user-zoom: none;
+}
