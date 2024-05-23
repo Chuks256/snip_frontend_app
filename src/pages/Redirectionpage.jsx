@@ -4,15 +4,14 @@ import "../RedirectionStyle.css"
 
 function Redirectionpage(){
     let params=useParams();
-        window.onload=function(){
-                fetch(`https://snip-1.onrender.com/api/getOriginalUrl/${params.referenceId}`)
+    
+    fetch(`https://snip-1.onrender.com/api/getOriginalUrl/${params.referenceId}`)
                 .then(async(response)=>{
                     return response.json()
                 })
                 .then(async(data)=>{
                         console.log(data)
                 })
-        }
 
 
     return(
