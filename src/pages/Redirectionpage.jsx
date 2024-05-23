@@ -11,8 +11,7 @@ function Redirectionpage(){
                 })
                 .then(async(data)=>{
                     if(data){
-                        // window.location=data.original_link
-                        console.log(params.referenceId)
+                        window.location=data.original_link
                     }
                 })
         }

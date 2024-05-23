@@ -11,7 +11,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Landingpage/>} />
       <Route path="/home" element={<Landingpage/>} />
-      <Route path="/redirection" element={ <Redirectionpage/>} />
+      <Route path="/i/:params" element={ <Redirectionpage/>} />
       <Route path='/documentation' element={<Documentationpage/>} />
       <Route path='/home/*' element={<NotFoundPage/>} />
     </Routes>
