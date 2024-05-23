@@ -1,13 +1,11 @@
 
 import { useParams } from "react-router-dom"
 import "../RedirectionStyle.css"
-import { useEffect } from "react";
 
 function Redirectionpage(){
     let params=useParams();
-        // https://snip-eight.vercel.app
         window.onload=function(){
-                fetch(`http://localhost:4005/api/getOriginalUrl/${params.referenceId}`)
+                fetch(`https://snip-1.onrender.com/api/getOriginalUrl/${params.referenceId}`)
                 .then(async(response)=>{
                     return response.json()
                 })

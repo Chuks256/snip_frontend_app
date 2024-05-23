@@ -23,11 +23,8 @@ function Maincomponent(){
         if(get_input_value.length>0){
             setColor("transparent")
             setBtnState("wait..");
-                //  define use effect hookk 
-                // "https://snip-eight.vercel.app/api/snip_url"
-                // "http://localhost:4005/getAllData"
-                // https://snip-eight.vercel.app/api/snip_url?OriginalUrl=${url_input}
-                fetch(`http://localhost:4005/api/snip_url?originalUrl=${get_input_value}`)
+                //  define use effect hook
+                fetch(`https://snip-1.onrender.com/api/snip_url?originalUrl=${get_input_value}`)
             .then(async (response)=>{
                 return response.json()
             })
@@ -59,6 +56,11 @@ function Maincomponent(){
         setModalState("none")
     }
 
+    let copyUrl=()=>{
+        let copy_url=navigator.clipboard
+        copy_url.writeText(`${window.location.href}i/${data.reference}`)
+    }
+
     return(
         <>
 <Errorcomponent yAxis={errorState} />
@@ -66,7 +68,7 @@ function Maincomponent(){
 <div style={{display:modalState}} className="modalContainer">
         <div className="modalBox">
             <div className="modal_url_showcase">
-                <img src={copy} alt=""  className="copyIcon"/>
+                <img src={copy} alt=""  onClick={copyUrl}  className="copyIcon"/>
                 <div className="modal_url">{`${window.location.href}i/${data.reference}`}</div>
             </div>
             <div className="modal_info">

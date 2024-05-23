@@ -11,9 +11,9 @@ function Navbar(){
             </div>
 
             <ul class="navListContainer">
-                <li><a href="#Documentation">Home</a></li>
-                <li><a href="#Documentation">About</a></li>
-                <li><a href="#Documentation">Github</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="https://github.com/Chuks256/snip_frontend_app">Github</a></li>
                 <li><a href="#Documentation">Documentation</a></li>
             </ul>
 
