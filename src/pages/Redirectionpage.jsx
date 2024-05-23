@@ -10,9 +10,7 @@ function Redirectionpage(){
                     return response.json()
                 })
                 .then(async(data)=>{
-                    if(data){
                         console.log(data)
-                    }
                 })
         }
 
