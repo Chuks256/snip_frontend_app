@@ -83,7 +83,7 @@ function Maincomponent(){
 {/* model section ending */}
 
         <div className="mainContainer">
-            <input type="text" style={{borderColor:color}} value={url_input} onChange={handleChange} className="mainTxtInput" />
+            <input type="text" placeholder="Url link must start with https://" style={{borderColor:color}} value={url_input} onChange={handleChange} className="mainTxtInput" />
             <button onClick={checkMate}  className="mainTxtBtn">{btnState}</button>
         </div>
         </>
