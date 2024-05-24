@@ -9,7 +9,7 @@ function Redirectionpage(){
         let get_original_url=await fetch(`https://snip-1.onrender.com/api/getOriginalUrl/${get_params_data.redirection_id}`)
         let _data=await get_original_url.json()
         if(await _data.original_link){
-            window.location=_data.original_link;
+            window.location.href=`https://${_data.original_link}`
         }
     }
 
