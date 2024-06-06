@@ -11,7 +11,8 @@ function Redirectionpage(){
         let get_original_url=await fetch(prod_url)
         let _data=await get_original_url.json()
         if(await _data.original_link){
-            window.location=`https://${_data.original_link.slice(_data.original_link.indexOf("www"))}`
+            let parse_url_link=_data.original_link.split("://");
+            window.location=`https://${parse_url_link[1]}`
         }
     }
 
