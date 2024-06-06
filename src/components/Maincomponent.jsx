@@ -24,7 +24,9 @@ function Maincomponent(){
             setColor("transparent")
             setBtnState("wait..");
                 //  define use effect hook
-                fetch(`https://snip-1.onrender.com/api/snip_url?originalUrl=${get_input_value}`)
+                let prod_url=`https://snip-1.onrender.com/api/snip_url?originalUrl=${get_input_value}`
+                let dev_url=`http://localhost:4005/api/snip_url?originalUrl=${get_input_value}`
+                fetch(prod_url)
             .then(async (response)=>{
                 return response.json()
             })

@@ -6,10 +6,12 @@ function Redirectionpage(){
     let params=useParams();
     window.onload=async()=>{
         let get_params_data=params
-        let get_original_url=await fetch(`https://snip-1.onrender.com/api/getOriginalUrl/${get_params_data.redirection_id}`)
+        let prod_url=`https://snip-1.onrender.com/api/getOriginalUrl/${get_params_data.redirection_id}`
+        let dev_url=`http://localhost:4005/api/getOriginalUrl/${get_params_data.redirection_id}`
+        let get_original_url=await fetch(prod_url)
         let _data=await get_original_url.json()
         if(await _data.original_link){
-            window.location.href=`https://${_data.original_link.slice(_data.original_link.indexOf("www"))}`
+            window.location=`https://${_data.original_link.slice(_data.original_link.indexOf("www"))}`
         }
     }
 
