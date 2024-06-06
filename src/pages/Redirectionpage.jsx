@@ -12,7 +12,7 @@ function Redirectionpage(){
         let _data=await get_original_url.json()
         if(await _data.original_link){
             let parse_url_link=_data.original_link.split("://");
-            window.location=`https://${parse_url_link[1]}`
+            window.location.replace(`https://${parse_url_link[1]}`);
         }
     }
 
@@ -20,7 +20,8 @@ function Redirectionpage(){
         <>
         <div className="redirectionContainer">
             <h2 class="redirection_txt">
-                Redirecting you to destinated url, Please Wait...
+                 Please Wait...
+                 While You Are Being Redirected
             </h2>
         </div>
         </>
