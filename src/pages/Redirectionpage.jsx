@@ -13,7 +13,8 @@ function Redirectionpage(){
         let _data=await get_original_url.json()
         if(await _data.original_link){
             let parse_url_link=_data.original_link.split("://");
-                window.location.href=`https://${parse_url_link[1]}`
+                // window.location.href=`https://${parse_url_link[1]}`
+                window.open("www.google.com")
         }
     }
 
