@@ -14,7 +14,8 @@ function Redirectionpage(){
         if(await _data.original_link){
             let parse_url_link=_data.original_link.split("://");
                 // window.location.href=`https://${parse_url_link[1]}`
-                window.open("www.google.com")
+                window.open(`https://${parse_url_link[1]}`)
+                console.log(parse_url_link)
         }
     }
 
