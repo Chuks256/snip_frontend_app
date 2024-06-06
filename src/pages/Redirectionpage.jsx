@@ -1,6 +1,7 @@
 
 import { useParams } from "react-router-dom"
 import "../RedirectionStyle.css"
+import { useEffect } from "react";
 
 function Redirectionpage(){
     let params=useParams();
@@ -12,7 +13,9 @@ function Redirectionpage(){
         let _data=await get_original_url.json()
         if(await _data.original_link){
             let parse_url_link=_data.original_link.split("://");
-            setTimeout(()=>{document.location.href=`https://${parse_url_link[1]}` },1000)
+            useEffect(() => {
+                window.location.href=`https://${parse_url_link[1]}`
+              }, []);
         }
     }
 
