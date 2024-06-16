@@ -70,7 +70,7 @@ function Maincomponent(){
 <div style={{display:modalState}} className="modalContainer">
         <div className="modalBox">
             <div className="modal_url_showcase">
-                <img src={copy} alt=""  onClick={copyUrl}  className="copyIcon"/>
+                <img src={copy} alt="" onClick={copyUrl}  className="copyIcon"/>
                 <div className="modal_url">{`${window.location.href}i/${data.reference}`}</div>
             </div>
             <div className="modal_info">
