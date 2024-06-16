@@ -43,13 +43,13 @@ border-color:transparent;
         flex-direction: column;
     }
     .mainTxtInput{
-        padding:16px;
-        width:300px;
+        padding:14px;
+        width:250px;
     }
 
     .mainTxtBtn{
-        padding:16px;
-        width:330px;
+        padding:14px;
+        width:280px;
         font-size:16px;
     }
 

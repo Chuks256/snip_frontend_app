@@ -1,7 +1,6 @@
 
 import "../NavbarStyle.css"
 import logo from "../assets/logo.png";
-import globe from "../assets/globe.png"
 
 function Navbar(){
     return(
