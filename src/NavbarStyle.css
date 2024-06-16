@@ -49,12 +49,14 @@ font-weight:bold;
 }
 
 
+
 @media screen and (max-width:900px){
     .navListContainer{
         display: none;
     }
 
     .navContainer{
-        gap:9em;
+        gap:7.7em;
     }
+
 }

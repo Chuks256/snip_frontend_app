@@ -1,6 +1,8 @@
 
 import "../NavbarStyle.css"
 import logo from "../assets/logo.png";
+import globe from "../assets/globe.png"
+
 function Navbar(){
     return(
         <>
@@ -16,7 +18,7 @@ function Navbar(){
                 <li><a href="https://github.com/Chuks256/snip_frontend_app">Github</a></li>
                 <li><a href="#Documentation">Documentation</a></li>
             </ul>
-
+            
             <button class="navBarBtn">Get Api</button>
         </div>
         </>
