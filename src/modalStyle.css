@@ -76,4 +76,19 @@
         }
 
 
+        /* make modal to be responsive on mobile */
+        @media screen and (max-width:900px){
+            .modalBox{
+                position: absolute;
+                bottom:0%;
+                width:460px;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius:0px;
+            }
 
+            .modal_done_btn{
+                padding:15px;
+            }
+            
+    
+        }
