@@ -53,7 +53,7 @@ function Navbar(){
                 <li><a href="#Documentation">Documentation</a></li>
             </ul>
             
-            <button style={{"opacity":`${btnVisibility}`}} class="navBarBtn" onClick={installHandler} >Install App</button>
+            <button style={{"opacity":`${btnVisibility}`}} class="navBarBtn" onClick={installHandler} >Get App</button>
         </div>
         </>
     )
