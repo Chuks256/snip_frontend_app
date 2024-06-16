@@ -79,7 +79,7 @@ function Maincomponent(){
                 or place an issue @ the github repo
                 </p>
             </div>
-            <button onClick={closeModalBox} className="modal_done_btn">Cancel</button>
+            <button onClick={closeModalBox} className="modal_done_btn">Close</button>
         </div>
        </div>
 {/* model section ending */}
