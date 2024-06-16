@@ -92,13 +92,20 @@
 
             .modal_done_btn{
                 padding:15px;
-                width:420px;
+                width:320px;
             }
 
-            .modal_url_showcase,.modal_info{
+            .modal_info{
                 justify-content: center;
                 align-items: center;
-                width:380px;
+                max-width:300px;
+                font-size:12px;
+            }
+            .modal_url_showcase{
+                min-width: 300px;
+            }
+            .modal_info_detail{
+                max-width:300px;
             }
 
     
