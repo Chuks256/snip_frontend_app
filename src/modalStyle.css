@@ -82,13 +82,25 @@
                 position: absolute;
                 bottom:0%;
                 width:460px;
+                border-top-right-radius: 30px;
+                border-top-left-radius: 30px;
                 border-bottom-right-radius: 0px;
                 border-bottom-left-radius:0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             .modal_done_btn{
                 padding:15px;
+                width:420px;
             }
-            
+
+            .modal_url_showcase,.modal_info{
+                justify-content: center;
+                align-items: center;
+                width:380px;
+            }
+
     
         }
