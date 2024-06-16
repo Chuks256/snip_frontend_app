@@ -81,7 +81,6 @@
             .modalBox{
                 position: absolute;
                 bottom:0%;
-                width:460px;
                 border-top-right-radius: 30px;
                 border-top-left-radius: 30px;
                 border-bottom-right-radius: 0px;
