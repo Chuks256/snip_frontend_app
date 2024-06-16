@@ -55,6 +55,10 @@ font-weight:bold;
         display: none;
     }
 
+    .navBarBtn{
+        width:120px;
+    }
+
     .navContainer{
         gap:7.7em;
     }
